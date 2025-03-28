@@ -1,0 +1,178 @@
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Castellane </title>
+	<link rel="stylesheet" href="css/style.css">
+<style type="text/css" id="operaUserStyle">
+  video {
+    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(0.75 calc(env(-opera-gx-accent-color-r)/255) calc(env(-opera-gx-accent-color-g)/255) calc(env(-opera-gx-accent-color-b)/255)));
+  }
+</style></head>
+<body>
+	
+				<div class="navbar">
+					<a href="index.php?page=1">
+						<img src="images/logo.png" class="logo"></a>
+					<ul>
+						<li><a href="index.php?page=2">Profils</a></li>
+						<li><a href="index.php?page=3">Candidats</a></li>
+						<li><a href="index.php?page=4">Moniteurs</a></li>
+						<li><a href="index.php?page=5">Leçons</a></li>
+						<li><a href="index.php?page=6">Véhicules</a></li>
+						<li><a href="index.php?page=7">Examens</a></li>
+						<li><a href="index.php?page=8">Plannings</a></li>
+						<li><a href="index.php?page=9">Statistiques</a></li>
+						<a href="index.php?page=10"><button>Se déconnecter</button></a>
+					</ul>
+				</div><div class="insrt"><h3>Ajout d'une nouvelle Vehicule</h3>
+
+<form method="post" enctype="multipart/form-data">
+    <table>
+        <tbody><tr>
+            <td> image </td>
+            <td><input type="file" name="IMGVEHICULE" id="IMGVEHICULE" accept=".jpg, .jpeg, .png" value=""></td>
+        </tr>
+        <tr>
+            <td> marque </td>
+            <td><input type="text" name="MARQUE" value=""></td>
+        </tr>
+        <tr>
+            <td> modele </td>
+            <td><input type="text" name="MODELE" value=""></td>
+        </tr>
+        <tr>
+            <td> immatriculation </td>
+            <td><input type="text" name="IMMATRICULATION" value=""></td>
+        </tr>
+        <!--tr>
+            <td> Statut </td>
+            <td><input type="text" name="Statut"></td>
+        </tr>
+        <tr>
+            <td> email </td>
+            <td><select name="email"></td>
+        </tr>
+        <tr>
+            <td> mdp </td>
+            <td><input type="text" name="mdp"></td>
+        </tr-->
+        <tr>
+            <td><input type="reset" name="Annuler" value="Annuler"></td>
+            <td><input type="submit" name="Valider" value="Valider"></td>
+        </tr>
+    </tbody></table>
+    </form><br>
+<b>Warning</b>:  move_uploaded_file(../images/user/pixil-frame-0 (1).png): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\auto_ecole\modele\modele.class.php</b> on line <b>264</b><br>
+<br>
+<b>Warning</b>:  move_uploaded_file(): Unable to move "C:\xampp\tmp\phpEDF3.tmp" to "../images/user/pixil-frame-0 (1).png" in <b>C:\xampp\htdocs\auto_ecole\modele\modele.class.php</b> on line <b>264</b><br>
+<h3> Liste des classes </h3>
+<form method="post">
+	Filtrer par : <input type="text" name="filtre"> 
+	<input type="submit" name="Filtrer" value="Filtrer">
+</form>
+<br>
+<table border="1"> 
+	<tbody><tr>
+		<td> Id vehicule </td>
+        <td>image</td>
+		<td> marque </td>
+		<td> modele </td>
+        <td> imatriculation </td>
+<td> Opérations </td>	</tr>
+	<tr>
+        <td>1</td>
+        <td><img src="" alt="image-article"></td>
+        <td>Audi</td>
+        <td>QS6</td>
+        <td>QP-453-OP</td>
+        <td><a href="index.php?page=6&amp;action=sup&amp;IDVEHICULE=1"><img src="images/supprimer.png" height="30" witdh="30"> </a>
+            <a href="index.php?page=6&amp;action=edit&amp;IDVEHICULE=1"><img src="images/editer.jpeg" height="30" witdh="30"> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><img src="" alt="image-article"></td>
+        <td>Porsche</td>
+        <td>ex</td>
+        <td>gr-758-XX1</td>
+        <td> <a href="index.php?page=6&amp;action=sup&amp;IDVEHICULE=2"><img src="images/supprimer.png" height="30" witdh="30"> </a>
+            <a href="index.php?page=6&amp;action=edit&amp;IDVEHICULE=2"><img src="images/editer.jpeg" height="30" witdh="30"> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><img src="" alt="image-article"></td>
+        <td>Porsche</td>
+        <td>ex</td>
+        <td>gr-758-XX1</td>
+        <td> <a href="index.php?page=6&amp;action=sup&amp;IDVEHICULE=3"><img src="images/supprimer.png" height="30" witdh="30"> </a>
+            <a href="index.php?page=6&amp;action=edit&amp;IDVEHICULE=3"><img src="images/editer.jpeg" height="30" witdh="30"> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><img src="" alt="image-article"></td>
+        <td>Porsche</td>
+        <td>ex</td>
+        <td>gr-758-XX1</td>
+        <td> <a href="index.php?page=6&amp;action=sup&amp;IDVEHICULE=4"><img src="images/supprimer.png" height="30" witdh="30"> </a>
+            <a href="index.php?page=6&amp;action=edit&amp;IDVEHICULE=4"><img src="images/editer.jpeg" height="30" witdh="30"> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><img src="../images/user/pixil-frame-0 (1)" alt="image-article"></td>
+        <td>Porsche</td>
+        <td>911 GTS</td>
+        <td>gr-758-XX1</td>
+        <td> <a href="index.php?page=6&amp;action=sup&amp;IDVEHICULE=5"><img src="images/supprimer.png" height="30" witdh="30"> </a>
+            <a href="index.php?page=6&amp;action=edit&amp;IDVEHICULE=5"><img src="images/editer.jpeg" height="30" witdh="30"> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>
+            <img src="C:/xampp/htdocs/auto_ecole/image" alt="image-article">
+        </td>
+        <td>Porsche</td>
+        <td>911 GTS</td>
+        <td>gr-758-XX3</td>
+        <td> <a href="index.php?page=6&amp;action=sup&amp;IDVEHICULE=6"><img src="images/supprimer.png" height="30" witdh="30"> </a>
+            <a href="index.php?page=6&amp;action=edit&amp;IDVEHICULE=6"><img src="images/editer.jpeg" height="30" witdh="30"> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td><img src="./images/user/pixil-frame-0 (1)." alt="image-article"></td>
+        <td>Porsche</td>
+        <td>SQ6</td>
+        <td>br-758-123</td>
+        <td> <a href="index.php?page=6&amp;action=sup&amp;IDVEHICULE=8"><img src="images/supprimer.png" height="30" witdh="30"> </a>
+            <a href="index.php?page=6&amp;action=edit&amp;IDVEHICULE=8"><img src="images/editer.jpeg" height="30" witdh="30"> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>
+            <img src="/path/to/your/htdocs/auto_ecole/" alt="image-article"></td>
+            <td>Porsche</td>
+            <td>SQ6</td>
+            <td>br-758-123</td>
+            <td> <a href="index.php?page=6&amp;action=sup&amp;IDVEHICULE=9"><img src="images/supprimer.png" height="30" witdh="30"> </a>
+                <a href="index.php?page=6&amp;action=edit&amp;IDVEHICULE=9"><img src="images/editer.jpeg" height="30" witdh="30"> </a>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img src="images/user/pixil-frame-0 (1)" alt="image-article"></td>
+            <td>Porsche</td>
+            <td>SQ6</td>
+            <td>br-758-123</td>
+            <td> <a href="index.php?page=6&amp;action=sup&amp;IDVEHICULE=10"><img src="images/supprimer.png" height="30" witdh="30"> </a>
+                <a href="index.php?page=6&amp;action=edit&amp;IDVEHICULE=10"><img src="images/editer.jpeg" height="30" witdh="30"> </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</body></html>

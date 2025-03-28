@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.php?page=1">
+            <img src="images/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="index.php?page=2">Profils</a></li>
+            <li><a href="index.php?page=3">Candidats</a></li>
+            <li><a href="index.php?page=4">Moniteurs</a></li>
+            <li><a href="index.php?page=5">Leçons</a></li>
+            <li><a href="index.php?page=6">Véhicules</a></li>
+            <li><a href="index.php?page=7">Examens</a></li>
+            <li><a href="index.php?page=8">Plannings</a></li>
+            <li><a href="index.php?page=9">Statistiques</a></li>
+            <a href="index.php?page=10"><button>Se déconnecter</button></a>
+        </ul>
+    </div>
+    <div class="insrt">
+        <table>  
+            <tbody>
+                <tr>      
+                    <td>
+                        <img src="imgsql/porsche-911.jpg" alt="image-article" height="100px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Bonjour Thiviyan!</h1>
+        <table>    
+            <tbody>
+                <tr>        
+                    <td> nom: </td>        
+                    <td>Kulasegaram</td>    
+                </tr>    
+                <tr>        
+                    <td> prénom:  </td>        
+                    <td>Thiviyan</td>    
+                </tr>    
+                <tr>        
+                    <td> email: </td>        
+                    <td>a@gmail.com</td>    
+                </tr>    
+                <tr>        
+                    <td> type user:</td>        
+                    <td style="color:red;">admin</td>    
+                </tr>    
+                <tr>        
+                    <td> n° téléphone: </td>        
+                    <td>0766191965</td>    
+                </tr>
+            </tbody>
+        </table>
+        <!--a href="test.html"--><button onclick="showupdt()">modifier</button><!--/a-->
+        <h1 color="red">n°3!</h1>
+        <div class="updtuser" id="updtuser">
+        <form method="post" enctype="multipart/form-data">
+            <table>
+                <tbody><tr>
+                    <td> photo de profil </td>
+                    <td><input type="file" name="PHOTO" id="PHOTO" accept=".jpg, .jpeg, .png" value="imgsql/porsche-911.jpg"></td>
+                </tr>
+                <tr>
+                    <td> Nom </td>
+                    <td><input type="text" name="NOM" value="Kulasegaram"></td>
+                </tr>
+                <tr>
+                    <td> prenom </td>
+                    <td><input type="text" name="PRENOM" value="Thiviyan"></td>
+                </tr>
+                <tr>
+                    <td> email </td>
+                    <td><input type="email" name="EMAIL" value="a@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td> mdp </td>
+                    <td><input type="password" name="MDP" value="123"></td>
+                </tr>
+                <tr>
+                <td> type d'user </td>
+                <td>
+                    <select name="type_user" id="type_user">
+                        <option value="admin">admin</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td> n° tel </td>
+                    <td><input type="number" name="NUMERO_TELEPHONE" value="0766191965"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" name="Annuler" value="Annuler"></td>
+                    <td><input type="submit" name="Modifier" value="Modifier"></td>
+                </tr>
+            </tbody></table>
+            <input type="hidden" name="IDUSER" value="3">    
+        </form>
+    </div>
+
+
+
+
+
+
+    <!--button onclick='showupdt()'>modifier</button-->
+    <!--div class="updtuser" id="updtuser">
+        <form method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td> photo de profil </td>
+                    <td><input type="file" name="PHOTO"  id = "PHOTO" accept=".jpg, .jpeg, .png" value=""></td>
+                </tr>
+                <tr>
+                    <td> Nom </td>
+                    <td><input type="text" name="NOM" value=""></td>
+                </tr>
+                <tr>
+                    <td> prenom </td>
+                    <td><input type="text" name="PRENOM" value=""></td>
+                </tr>
+                <tr>
+                    <td> email </td>
+                    <td><input type="email" name="EMAIL" value=""></td>
+                </tr>
+                <tr>
+                    <td> mdp </td>
+                    <td><input type="password" name="MDP" value=""></td>
+                </tr>
+                <tr>
+                <td> type d'user </td>
+                <td>
+                    <select name="type_user" id="type_user">
+                        <option value=""><?= ($lUser!=null)?$lUser['type_user']:'' ?></option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td> n° tel </td>
+                    <td><input type="number" name="NUMERO_TELEPHONE" value=""></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" name="Annuler" value="Annuler"></td>
+                    <td><input type="submit" name="Modifier" value="Modifier"></td>
+                </tr>
+            </table>
+        </form>
+    </div-->
+    <script>
+		let updtuser = document.querySelector(".updtuser");
+		let isShow = true;
+
+		function showupdt(){
+			/*if(isShow){
+				updtuser.style.display = "none";
+				isShow = false;
+			}else{
+				usersSection.style.display = "block";
+				isShow = true;
+			}*/
+            isShow=!isShow;
+            updtuser.classList.toggle("hide",isShow);
+			
+		}
+        /*function toggle(){
+            var x=document.getElementById("updtuser");
+            if(x.style.display==="block"){
+                x.style.display="none";
+            }
+            else{
+                x.style.display="block";
+            }
+        }*/
+    </script>
+</body>
+</html>
